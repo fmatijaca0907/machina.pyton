@@ -67,4 +67,3 @@ def tuple_to_koord(koord_tuple: tuple) -> str | None:
     
     koord_slova = slovo + broj
     return koord_slova
-

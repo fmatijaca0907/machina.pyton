@@ -1,9 +1,6 @@
 from helper_functions import koord_to_tuple, tuple_to_koord
 
 
-
-
-
 def legal_pijun(figura: dict[str, str], cilj: str) -> bool:
     """
     Funkcija koja provjerava je li najavljeni pomak pijuna legalan. Pravila koja prati su:
@@ -68,7 +65,6 @@ def legal_pijun(figura: dict[str, str], cilj: str) -> bool:
 
 # Ovdje ostale funkcije
 
-
 def legal_top (figura:dict[str,str],cilj : str) -> bool:
     """
     Funkcija koja provjerava dali je potez topa legalan, a pravila koja prati su:
@@ -106,12 +102,13 @@ def legal_top (figura:dict[str,str],cilj : str) -> bool:
     if polazište == odredište:
         return False
 
+
+
 LEGAL_FUNCITONS = {
     'pijun': legal_pijun,
     # 'konj': legal_konj,
-    "top" : legal_top,
+    "top" : legal_top
 }
-
 
 def is_move_legal(figura: dict[str, str], cilj) -> bool:
     tip = figura['tip']
